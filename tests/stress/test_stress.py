@@ -1,5 +1,5 @@
 import allure
-import time
+
 from tests.utils.steps import step_create_user, step_create_order
 
 
