@@ -1,0 +1,970 @@
+2025-07-25 15:21:24.307 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=chris622734, email=jennifer27@example.net, age=11
+2025-07-25 15:21:24.307 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=kaylaward7933, email=crystal22@example.net, age=32
+2025-07-25 15:21:24.308 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=mitchellrichard7216, email=christyjones@example.com, age=29
+2025-07-25 15:21:24.312 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=eballard1915, email=robbinscory@example.com, age=37
+2025-07-25 15:21:24.312 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=julie077101, email=smithrebekah@example.com, age=19
+2025-07-25 15:21:24.313 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=arroyokatelyn7385, email=nicolehinton@example.net, age=50
+2025-07-25 15:21:24.314 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=anthonyharvey8127, email=alittle@example.org, age=19
+2025-07-25 15:21:24.313 | INFO     | app.main:create_user:14 - Creating user kaylaward7933
+2025-07-25 15:21:24.312 | INFO     | app.main:create_user:14 - Creating user chris622734
+2025-07-25 15:21:24.320 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"chris622734","email":"jennifer27@example.net","age":11,"id":1}
+2025-07-25 15:21:24.317 | INFO     | app.main:create_user:14 - Creating user eballard1915
+2025-07-25 15:21:24.317 | INFO     | app.main:create_user:14 - Creating user arroyokatelyn7385
+2025-07-25 15:21:24.317 | INFO     | app.main:create_user:14 - Creating user julie077101
+2025-07-25 15:21:24.322 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"kaylaward7933","email":"crystal22@example.net","age":32,"id":1}
+2025-07-25 15:21:24.322 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:21:24.320 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:21:24.319 | INFO     | app.main:create_user:14 - Creating user mitchellrichard7216
+2025-07-25 15:21:24.320 | INFO     | app.main:create_user:14 - Creating user anthonyharvey8127
+2025-07-25 15:21:24.322 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=His, количество=2
+2025-07-25 15:21:24.325 | ERROR    | app.main:create_order:35 - User 9999 not found for order
+2025-07-25 15:21:24.320 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Gas, количество=3
+2025-07-25 15:21:24.325 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Gas","quantity":3,"id":1}
+2025-07-25 15:21:24.327 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"arroyokatelyn7385","email":"nicolehinton@example.net","age":50,"id":1}
+2025-07-25 15:21:24.326 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"eballard1915","email":"robbinscory@example.com","age":37,"id":1}
+2025-07-25 15:21:24.328 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"anthonyharvey8127","email":"alittle@example.org","age":19,"id":1}
+2025-07-25 15:21:24.326 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"julie077101","email":"smithrebekah@example.com","age":19,"id":1}
+2025-07-25 15:21:24.325 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=1
+2025-07-25 15:21:24.329 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"His","quantity":2,"id":1}
+2025-07-25 15:21:24.329 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"mitchellrichard7216","email":"christyjones@example.com","age":29,"id":1}
+2025-07-25 15:21:24.326 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:21:24.329 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:21:24.330 | INFO     | app.main:create_user:14 - Creating user anthonyharvey8127
+2025-07-25 15:21:24.331 | WARNING  | app.main:create_user:18 - Duplicate user anthonyharvey8127
+2025-07-25 15:21:24.326 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:21:24.327 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:21:24.326 | INFO     | tests.utils.steps:step_get_user:20 - Запрос на получение пользователя ID=1
+2025-07-25 15:21:24.326 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Many, количество=1
+2025-07-25 15:21:24.329 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=1
+2025-07-25 15:21:24.329 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:21:24.326 | INFO     | tests.utils.steps:step_get_user:20 - Запрос на получение пользователя ID=1
+2025-07-25 15:21:24.328 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Fly, количество=5
+2025-07-25 15:21:24.332 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Many","quantity":1,"id":1}
+2025-07-25 15:21:24.332 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=1
+2025-07-25 15:21:24.330 | DEBUG    | tests.utils.steps:step_get_user:22 - Ответ API: 200 | {"username":"chris622734","email":"jennifer27@example.net","age":11,"id":1}
+2025-07-25 15:21:24.329 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Talk, количество=1
+2025-07-25 15:21:24.329 | DEBUG    | tests.utils.steps:step_get_user:22 - Ответ API: 200 | {"username":"eballard1915","email":"robbinscory@example.com","age":37,"id":1}
+2025-07-25 15:21:24.330 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Six, количество=4
+2025-07-25 15:21:24.332 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=1
+2025-07-25 15:21:24.335 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Many","quantity":1,"id":1}
+2025-07-25 15:21:24.330 | SUCCESS  | tests.utils.steps:step_get_user:25 - Данные пользователя: {'username': 'chris622734', 'email': 'jennifer27@example.net', 'age': 11, 'id': 1}
+2025-07-25 15:21:24.330 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=1
+2025-07-25 15:21:24.336 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Fly","quantity":5,"id":1}
+2025-07-25 15:21:24.329 | SUCCESS  | tests.utils.steps:step_get_user:25 - Данные пользователя: {'username': 'eballard1915', 'email': 'robbinscory@example.com', 'age': 37, 'id': 1}
+2025-07-25 15:21:24.332 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Six","quantity":4,"id":2}
+2025-07-25 15:21:24.335 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Many', 'quantity': 1, 'id': 1}
+2025-07-25 15:21:24.335 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Talk","quantity":1,"id":1}
+2025-07-25 15:21:24.333 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Gas","quantity":3,"id":1}
+2025-07-25 15:21:24.336 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=1
+2025-07-25 15:21:24.333 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=2
+2025-07-25 15:21:24.335 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=1
+2025-07-25 15:21:24.333 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Investment, количество=5
+2025-07-25 15:21:24.333 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Gas', 'quantity': 3, 'id': 1}
+2025-07-25 15:21:24.336 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Size, количество=3
+2025-07-25 15:21:24.333 | INFO     | tests.utils.steps:step_check_db_user_and_orders:54 - Проверяем данные в БД для пользователя ID=1
+2025-07-25 15:21:24.336 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Picture, количество=2
+2025-07-25 15:21:24.341 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Size","quantity":3,"id":2}
+2025-07-25 15:21:24.337 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Investment","quantity":5,"id":3}
+2025-07-25 15:21:24.335 | SUCCESS  | tests.utils.steps:step_check_db_user_and_orders:64 - Проверка данных в БД пройдена: пользователь и 1 заказ(ов) совпадают с API
+2025-07-25 15:21:24.341 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=2
+2025-07-25 15:21:24.340 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Picture","quantity":2,"id":2}
+2025-07-25 15:21:24.337 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=3
+2025-07-25 15:21:24.341 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Two, количество=3
+2025-07-25 15:21:24.341 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=2
+2025-07-25 15:21:24.337 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Notice, количество=5
+2025-07-25 15:21:24.344 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Two","quantity":3,"id":3}
+2025-07-25 15:21:24.340 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Notice","quantity":5,"id":4}
+2025-07-25 15:21:24.341 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Truth, количество=1
+2025-07-25 15:21:24.344 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Truth","quantity":1,"id":3}
+2025-07-25 15:21:24.344 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=3
+2025-07-25 15:21:24.340 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=4
+2025-07-25 15:21:24.344 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=3
+2025-07-25 15:21:24.340 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Government, количество=1
+2025-07-25 15:21:24.344 | INFO     | tests.utils.steps:step_get_user:20 - Запрос на получение пользователя ID=1
+2025-07-25 15:21:24.344 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=School, количество=3
+2025-07-25 15:21:24.343 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Government","quantity":1,"id":5}
+2025-07-25 15:21:24.346 | DEBUG    | tests.utils.steps:step_get_user:22 - Ответ API: 200 | {"username":"mitchellrichard7216","email":"christyjones@example.com","age":29,"id":1}
+2025-07-25 15:21:24.347 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"School","quantity":3,"id":4}
+2025-07-25 15:21:24.343 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=5
+2025-07-25 15:21:24.346 | SUCCESS  | tests.utils.steps:step_get_user:25 - Данные пользователя: {'username': 'mitchellrichard7216', 'email': 'christyjones@example.com', 'age': 29, 'id': 1}
+2025-07-25 15:21:24.347 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=4
+2025-07-25 15:21:24.343 | INFO     | tests.utils.steps:step_get_user:20 - Запрос на получение пользователя ID=1
+2025-07-25 15:21:24.347 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=1
+2025-07-25 15:21:24.347 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Real, количество=2
+2025-07-25 15:21:24.346 | DEBUG    | tests.utils.steps:step_get_user:22 - Ответ API: 200 | {"username":"kaylaward7933","email":"crystal22@example.net","age":32,"id":1}
+2025-07-25 15:21:24.350 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Talk","quantity":1,"id":1}
+2025-07-25 15:21:24.350 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Talk', 'quantity': 1, 'id': 1}
+2025-07-25 15:21:24.350 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Real","quantity":2,"id":5}
+2025-07-25 15:21:24.350 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=2
+2025-07-25 15:21:24.350 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=5
+2025-07-25 15:21:24.353 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Picture","quantity":2,"id":2}
+2025-07-25 15:21:24.353 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Picture', 'quantity': 2, 'id': 2}
+2025-07-25 15:21:24.346 | SUCCESS  | tests.utils.steps:step_get_user:25 - Данные пользователя: {'username': 'kaylaward7933', 'email': 'crystal22@example.net', 'age': 32, 'id': 1}
+2025-07-25 15:21:24.351 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=glovercheryl8519, email=brian58@example.net, age=19
+2025-07-25 15:21:24.353 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=3
+2025-07-25 15:21:24.346 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=1
+2025-07-25 15:21:24.356 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Truth","quantity":1,"id":3}
+2025-07-25 15:21:24.356 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Truth', 'quantity': 1, 'id': 3}
+2025-07-25 15:21:24.349 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"His","quantity":2,"id":1}
+2025-07-25 15:21:24.356 | INFO     | tests.utils.steps:step_check_db_user_and_orders:54 - Проверяем данные в БД для пользователя ID=1
+2025-07-25 15:21:24.352 | INFO     | app.main:create_user:14 - Creating user glovercheryl8519
+2025-07-25 15:21:24.349 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'His', 'quantity': 2, 'id': 1}
+2025-07-25 15:21:24.357 | SUCCESS  | tests.utils.steps:step_check_db_user_and_orders:64 - Проверка данных в БД пройдена: пользователь и 3 заказ(ов) совпадают с API
+2025-07-25 15:21:24.349 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=2
+2025-07-25 15:21:24.354 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"glovercheryl8519","email":"brian58@example.net","age":19,"id":2}
+2025-07-25 15:21:24.355 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=2
+2025-07-25 15:21:24.352 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Six","quantity":4,"id":2}
+2025-07-25 15:21:24.355 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=2, продукт=Toward, количество=5
+2025-07-25 15:21:24.352 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Six', 'quantity': 4, 'id': 2}
+2025-07-25 15:21:24.359 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":2,"product_name":"Toward","quantity":5,"id":6}
+2025-07-25 15:21:24.352 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=3
+2025-07-25 15:21:24.355 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Investment","quantity":5,"id":3}
+2025-07-25 15:21:24.355 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Investment', 'quantity': 5, 'id': 3}
+2025-07-25 15:21:24.359 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=6
+2025-07-25 15:21:24.355 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=4
+2025-07-25 15:21:24.359 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=2, продукт=Third, количество=4
+2025-07-25 15:21:24.360 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Notice","quantity":5,"id":4}
+2025-07-25 15:21:24.363 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":2,"product_name":"Third","quantity":4,"id":7}
+2025-07-25 15:21:24.360 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Notice', 'quantity': 5, 'id': 4}
+2025-07-25 15:21:24.360 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=5
+2025-07-25 15:21:24.362 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Government","quantity":1,"id":5}
+2025-07-25 15:21:24.363 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=7
+2025-07-25 15:21:24.363 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Government', 'quantity': 1, 'id': 5}
+2025-07-25 15:21:24.363 | INFO     | tests.utils.steps:step_check_db_user_and_orders:54 - Проверяем данные в БД для пользователя ID=1
+2025-07-25 15:21:24.364 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=2, продукт=South, количество=5
+2025-07-25 15:21:24.364 | SUCCESS  | tests.utils.steps:step_check_db_user_and_orders:64 - Проверка данных в БД пройдена: пользователь и 5 заказ(ов) совпадают с API
+2025-07-25 15:21:24.366 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":2,"product_name":"South","quantity":5,"id":8}
+2025-07-25 15:21:24.366 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=8
+2025-07-25 15:21:24.366 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=2, продукт=Despite, количество=3
+2025-07-25 15:21:24.369 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":2,"product_name":"Despite","quantity":3,"id":9}
+2025-07-25 15:21:24.369 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=9
+2025-07-25 15:21:24.370 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=2, продукт=East, количество=3
+2025-07-25 15:21:24.372 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":2,"product_name":"East","quantity":3,"id":10}
+2025-07-25 15:21:24.372 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=10
+2025-07-25 15:21:24.373 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=qlee3476, email=paulfrancis@example.net, age=49
+2025-07-25 15:21:24.373 | INFO     | app.main:create_user:14 - Creating user qlee3476
+2025-07-25 15:21:24.375 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"qlee3476","email":"paulfrancis@example.net","age":49,"id":3}
+2025-07-25 15:21:24.375 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=3
+2025-07-25 15:21:24.375 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=3, продукт=Them, количество=1
+2025-07-25 15:21:24.378 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":3,"product_name":"Them","quantity":1,"id":11}
+2025-07-25 15:21:24.378 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=11
+2025-07-25 15:21:24.378 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=3, продукт=Wrong, количество=4
+2025-07-25 15:21:24.380 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":3,"product_name":"Wrong","quantity":4,"id":12}
+2025-07-25 15:21:24.381 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=12
+2025-07-25 15:21:24.381 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=3, продукт=Against, количество=1
+2025-07-25 15:21:24.384 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":3,"product_name":"Against","quantity":1,"id":13}
+2025-07-25 15:21:24.384 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=13
+2025-07-25 15:21:24.384 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=3, продукт=Law, количество=4
+2025-07-25 15:21:24.387 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":3,"product_name":"Law","quantity":4,"id":14}
+2025-07-25 15:21:24.387 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=14
+2025-07-25 15:21:24.387 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=3, продукт=Number, количество=4
+2025-07-25 15:21:24.389 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":3,"product_name":"Number","quantity":4,"id":15}
+2025-07-25 15:21:24.389 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=15
+2025-07-25 15:21:24.390 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=robertjohnson9211, email=iwatkins@example.net, age=34
+2025-07-25 15:21:24.391 | INFO     | app.main:create_user:14 - Creating user robertjohnson9211
+2025-07-25 15:21:24.393 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"robertjohnson9211","email":"iwatkins@example.net","age":34,"id":4}
+2025-07-25 15:21:24.393 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=4
+2025-07-25 15:21:24.393 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=4, продукт=Property, количество=4
+2025-07-25 15:21:24.396 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":4,"product_name":"Property","quantity":4,"id":16}
+2025-07-25 15:21:24.397 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=16
+2025-07-25 15:21:24.397 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=4, продукт=Ten, количество=5
+2025-07-25 15:21:24.400 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":4,"product_name":"Ten","quantity":5,"id":17}
+2025-07-25 15:21:24.400 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=17
+2025-07-25 15:21:24.400 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=4, продукт=Recently, количество=3
+2025-07-25 15:21:24.402 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":4,"product_name":"Recently","quantity":3,"id":18}
+2025-07-25 15:21:24.402 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=18
+2025-07-25 15:21:24.403 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=4, продукт=Onto, количество=5
+2025-07-25 15:21:24.406 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":4,"product_name":"Onto","quantity":5,"id":19}
+2025-07-25 15:21:24.406 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=19
+2025-07-25 15:21:24.406 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=4, продукт=Production, количество=4
+2025-07-25 15:21:24.408 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":4,"product_name":"Production","quantity":4,"id":20}
+2025-07-25 15:21:24.408 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=20
+2025-07-25 15:21:24.409 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=nicholaspreston4822, email=rebecca43@example.net, age=34
+2025-07-25 15:21:24.410 | INFO     | app.main:create_user:14 - Creating user nicholaspreston4822
+2025-07-25 15:21:24.411 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"nicholaspreston4822","email":"rebecca43@example.net","age":34,"id":5}
+2025-07-25 15:21:24.411 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=5
+2025-07-25 15:21:24.412 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=5, продукт=See, количество=5
+2025-07-25 15:21:24.413 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":5,"product_name":"See","quantity":5,"id":21}
+2025-07-25 15:21:24.413 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=21
+2025-07-25 15:21:24.414 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=5, продукт=Attention, количество=1
+2025-07-25 15:21:24.416 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":5,"product_name":"Attention","quantity":1,"id":22}
+2025-07-25 15:21:24.416 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=22
+2025-07-25 15:21:24.416 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=5, продукт=Treatment, количество=1
+2025-07-25 15:21:24.419 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":5,"product_name":"Treatment","quantity":1,"id":23}
+2025-07-25 15:21:24.419 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=23
+2025-07-25 15:21:24.420 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=5, продукт=Plan, количество=4
+2025-07-25 15:21:24.422 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":5,"product_name":"Plan","quantity":4,"id":24}
+2025-07-25 15:21:24.422 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=24
+2025-07-25 15:21:24.422 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=5, продукт=Affect, количество=1
+2025-07-25 15:21:24.424 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":5,"product_name":"Affect","quantity":1,"id":25}
+2025-07-25 15:21:24.424 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=25
+2025-07-25 15:21:24.424 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=davidaguirre3421, email=zhorton@example.com, age=38
+2025-07-25 15:21:24.425 | INFO     | app.main:create_user:14 - Creating user davidaguirre3421
+2025-07-25 15:21:24.427 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"davidaguirre3421","email":"zhorton@example.com","age":38,"id":6}
+2025-07-25 15:21:24.427 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=6
+2025-07-25 15:21:24.427 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=6, продукт=Name, количество=4
+2025-07-25 15:21:24.429 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":6,"product_name":"Name","quantity":4,"id":26}
+2025-07-25 15:21:24.429 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=26
+2025-07-25 15:21:24.429 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=6, продукт=Door, количество=4
+2025-07-25 15:21:24.432 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":6,"product_name":"Door","quantity":4,"id":27}
+2025-07-25 15:21:24.432 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=27
+2025-07-25 15:21:24.432 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=6, продукт=Beyond, количество=5
+2025-07-25 15:21:24.434 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":6,"product_name":"Beyond","quantity":5,"id":28}
+2025-07-25 15:21:24.435 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=28
+2025-07-25 15:21:24.435 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=6, продукт=Population, количество=4
+2025-07-25 15:21:24.437 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":6,"product_name":"Population","quantity":4,"id":29}
+2025-07-25 15:21:24.437 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=29
+2025-07-25 15:21:24.438 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=6, продукт=Sense, количество=2
+2025-07-25 15:21:24.440 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":6,"product_name":"Sense","quantity":2,"id":30}
+2025-07-25 15:21:24.440 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=30
+2025-07-25 15:21:24.440 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=adamjordan4897, email=tabitha25@example.com, age=38
+2025-07-25 15:21:24.441 | INFO     | app.main:create_user:14 - Creating user adamjordan4897
+2025-07-25 15:21:24.443 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"adamjordan4897","email":"tabitha25@example.com","age":38,"id":7}
+2025-07-25 15:21:24.443 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=7
+2025-07-25 15:21:24.443 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=7, продукт=Line, количество=2
+2025-07-25 15:21:24.445 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":7,"product_name":"Line","quantity":2,"id":31}
+2025-07-25 15:21:24.445 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=31
+2025-07-25 15:21:24.445 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=7, продукт=Price, количество=4
+2025-07-25 15:21:24.447 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":7,"product_name":"Price","quantity":4,"id":32}
+2025-07-25 15:21:24.447 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=32
+2025-07-25 15:21:24.447 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=7, продукт=Performance, количество=3
+2025-07-25 15:21:24.449 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":7,"product_name":"Performance","quantity":3,"id":33}
+2025-07-25 15:21:24.449 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=33
+2025-07-25 15:21:24.449 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=7, продукт=Director, количество=4
+2025-07-25 15:21:24.451 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":7,"product_name":"Director","quantity":4,"id":34}
+2025-07-25 15:21:24.452 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=34
+2025-07-25 15:21:24.452 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=7, продукт=Record, количество=5
+2025-07-25 15:21:24.454 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":7,"product_name":"Record","quantity":5,"id":35}
+2025-07-25 15:21:24.454 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=35
+2025-07-25 15:21:24.454 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=sarahlyons5008, email=debrahunt@example.org, age=16
+2025-07-25 15:21:24.455 | INFO     | app.main:create_user:14 - Creating user sarahlyons5008
+2025-07-25 15:21:24.457 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"sarahlyons5008","email":"debrahunt@example.org","age":16,"id":8}
+2025-07-25 15:21:24.457 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=8
+2025-07-25 15:21:24.457 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=8, продукт=Tough, количество=4
+2025-07-25 15:21:24.459 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":8,"product_name":"Tough","quantity":4,"id":36}
+2025-07-25 15:21:24.459 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=36
+2025-07-25 15:21:24.460 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=8, продукт=Direction, количество=5
+2025-07-25 15:21:24.461 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":8,"product_name":"Direction","quantity":5,"id":37}
+2025-07-25 15:21:24.461 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=37
+2025-07-25 15:21:24.462 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=8, продукт=Son, количество=2
+2025-07-25 15:21:24.464 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":8,"product_name":"Son","quantity":2,"id":38}
+2025-07-25 15:21:24.464 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=38
+2025-07-25 15:21:24.464 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=8, продукт=Whatever, количество=1
+2025-07-25 15:21:24.466 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":8,"product_name":"Whatever","quantity":1,"id":39}
+2025-07-25 15:21:24.466 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=39
+2025-07-25 15:21:24.466 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=8, продукт=Production, количество=2
+2025-07-25 15:21:24.468 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":8,"product_name":"Production","quantity":2,"id":40}
+2025-07-25 15:21:24.469 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=40
+2025-07-25 15:21:24.469 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=manningmichael4229, email=zachary81@example.com, age=16
+2025-07-25 15:21:24.470 | INFO     | app.main:create_user:14 - Creating user manningmichael4229
+2025-07-25 15:21:24.471 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"manningmichael4229","email":"zachary81@example.com","age":16,"id":9}
+2025-07-25 15:21:24.471 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=9
+2025-07-25 15:21:24.472 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=9, продукт=Live, количество=4
+2025-07-25 15:21:24.474 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":9,"product_name":"Live","quantity":4,"id":41}
+2025-07-25 15:21:24.474 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=41
+2025-07-25 15:21:24.474 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=9, продукт=Dog, количество=2
+2025-07-25 15:21:24.477 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":9,"product_name":"Dog","quantity":2,"id":42}
+2025-07-25 15:21:24.477 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=42
+2025-07-25 15:21:24.478 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=9, продукт=Forget, количество=3
+2025-07-25 15:21:24.480 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":9,"product_name":"Forget","quantity":3,"id":43}
+2025-07-25 15:21:24.480 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=43
+2025-07-25 15:21:24.480 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=9, продукт=Federal, количество=2
+2025-07-25 15:21:24.483 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":9,"product_name":"Federal","quantity":2,"id":44}
+2025-07-25 15:21:24.483 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=44
+2025-07-25 15:21:24.483 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=9, продукт=Economic, количество=1
+2025-07-25 15:21:24.485 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":9,"product_name":"Economic","quantity":1,"id":45}
+2025-07-25 15:21:24.485 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=45
+2025-07-25 15:21:24.486 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=xhanson9156, email=ysullivan@example.org, age=38
+2025-07-25 15:21:24.487 | INFO     | app.main:create_user:14 - Creating user xhanson9156
+2025-07-25 15:21:24.488 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"xhanson9156","email":"ysullivan@example.org","age":38,"id":10}
+2025-07-25 15:21:24.489 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=10
+2025-07-25 15:21:24.489 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=10, продукт=Ever, количество=2
+2025-07-25 15:21:24.491 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":10,"product_name":"Ever","quantity":2,"id":46}
+2025-07-25 15:21:24.491 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=46
+2025-07-25 15:21:24.491 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=10, продукт=Address, количество=2
+2025-07-25 15:21:24.493 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":10,"product_name":"Address","quantity":2,"id":47}
+2025-07-25 15:21:24.493 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=47
+2025-07-25 15:21:24.493 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=10, продукт=Center, количество=5
+2025-07-25 15:21:24.495 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":10,"product_name":"Center","quantity":5,"id":48}
+2025-07-25 15:21:24.495 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=48
+2025-07-25 15:21:24.496 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=10, продукт=Suggest, количество=1
+2025-07-25 15:21:24.498 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":10,"product_name":"Suggest","quantity":1,"id":49}
+2025-07-25 15:21:24.498 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=49
+2025-07-25 15:21:24.498 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=10, продукт=Democratic, количество=3
+2025-07-25 15:21:24.500 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":10,"product_name":"Democratic","quantity":3,"id":50}
+2025-07-25 15:21:24.500 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=50
+2025-07-25 15:21:24.500 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=scott681721, email=amandadavidson@example.org, age=59
+2025-07-25 15:21:24.501 | INFO     | app.main:create_user:14 - Creating user scott681721
+2025-07-25 15:21:24.503 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"scott681721","email":"amandadavidson@example.org","age":59,"id":11}
+2025-07-25 15:21:24.503 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=11
+2025-07-25 15:21:24.503 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=11, продукт=Music, количество=4
+2025-07-25 15:21:24.505 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":11,"product_name":"Music","quantity":4,"id":51}
+2025-07-25 15:21:24.505 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=51
+2025-07-25 15:21:24.505 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=11, продукт=Bill, количество=5
+2025-07-25 15:21:24.507 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":11,"product_name":"Bill","quantity":5,"id":52}
+2025-07-25 15:21:24.507 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=52
+2025-07-25 15:21:24.507 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=11, продукт=Pass, количество=5
+2025-07-25 15:21:24.509 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":11,"product_name":"Pass","quantity":5,"id":53}
+2025-07-25 15:21:24.509 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=53
+2025-07-25 15:21:24.509 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=11, продукт=Training, количество=3
+2025-07-25 15:21:24.511 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":11,"product_name":"Training","quantity":3,"id":54}
+2025-07-25 15:21:24.511 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=54
+2025-07-25 15:21:24.512 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=11, продукт=Pm, количество=5
+2025-07-25 15:21:24.513 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":11,"product_name":"Pm","quantity":5,"id":55}
+2025-07-25 15:21:24.513 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=55
+2025-07-25 15:21:24.514 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=staceycox4969, email=melissa39@example.org, age=18
+2025-07-25 15:21:24.515 | INFO     | app.main:create_user:14 - Creating user staceycox4969
+2025-07-25 15:21:24.516 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"staceycox4969","email":"melissa39@example.org","age":18,"id":12}
+2025-07-25 15:21:24.516 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=12
+2025-07-25 15:21:24.516 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=12, продукт=Beyond, количество=3
+2025-07-25 15:21:24.519 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":12,"product_name":"Beyond","quantity":3,"id":56}
+2025-07-25 15:21:24.519 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=56
+2025-07-25 15:21:24.519 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=12, продукт=Method, количество=3
+2025-07-25 15:21:24.521 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":12,"product_name":"Method","quantity":3,"id":57}
+2025-07-25 15:21:24.521 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=57
+2025-07-25 15:21:24.521 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=12, продукт=Hair, количество=2
+2025-07-25 15:21:24.523 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":12,"product_name":"Hair","quantity":2,"id":58}
+2025-07-25 15:21:24.523 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=58
+2025-07-25 15:21:24.523 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=12, продукт=Continue, количество=1
+2025-07-25 15:21:24.525 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":12,"product_name":"Continue","quantity":1,"id":59}
+2025-07-25 15:21:24.525 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=59
+2025-07-25 15:21:24.525 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=12, продукт=Base, количество=2
+2025-07-25 15:21:24.527 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":12,"product_name":"Base","quantity":2,"id":60}
+2025-07-25 15:21:24.527 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=60
+2025-07-25 15:21:24.528 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=ricesheena1709, email=jessica72@example.net, age=50
+2025-07-25 15:21:24.529 | INFO     | app.main:create_user:14 - Creating user ricesheena1709
+2025-07-25 15:21:24.530 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"ricesheena1709","email":"jessica72@example.net","age":50,"id":13}
+2025-07-25 15:21:24.530 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=13
+2025-07-25 15:21:24.530 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=13, продукт=Do, количество=1
+2025-07-25 15:21:24.532 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":13,"product_name":"Do","quantity":1,"id":61}
+2025-07-25 15:21:24.532 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=61
+2025-07-25 15:21:24.533 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=13, продукт=Measure, количество=4
+2025-07-25 15:21:24.535 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":13,"product_name":"Measure","quantity":4,"id":62}
+2025-07-25 15:21:24.535 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=62
+2025-07-25 15:21:24.535 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=13, продукт=Poor, количество=3
+2025-07-25 15:21:24.537 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":13,"product_name":"Poor","quantity":3,"id":63}
+2025-07-25 15:21:24.537 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=63
+2025-07-25 15:21:24.537 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=13, продукт=Buy, количество=4
+2025-07-25 15:21:24.539 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":13,"product_name":"Buy","quantity":4,"id":64}
+2025-07-25 15:21:24.539 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=64
+2025-07-25 15:21:24.539 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=13, продукт=Floor, количество=1
+2025-07-25 15:21:24.541 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":13,"product_name":"Floor","quantity":1,"id":65}
+2025-07-25 15:21:24.541 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=65
+2025-07-25 15:21:24.542 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=bmartin4549, email=kristinmelton@example.com, age=46
+2025-07-25 15:21:24.542 | INFO     | app.main:create_user:14 - Creating user bmartin4549
+2025-07-25 15:21:24.544 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"bmartin4549","email":"kristinmelton@example.com","age":46,"id":14}
+2025-07-25 15:21:24.544 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=14
+2025-07-25 15:21:24.544 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=14, продукт=Its, количество=1
+2025-07-25 15:21:24.546 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":14,"product_name":"Its","quantity":1,"id":66}
+2025-07-25 15:21:24.546 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=66
+2025-07-25 15:21:24.547 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=14, продукт=Tree, количество=3
+2025-07-25 15:21:24.549 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":14,"product_name":"Tree","quantity":3,"id":67}
+2025-07-25 15:21:24.549 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=67
+2025-07-25 15:21:24.549 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=14, продукт=Animal, количество=5
+2025-07-25 15:21:24.551 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":14,"product_name":"Animal","quantity":5,"id":68}
+2025-07-25 15:21:24.551 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=68
+2025-07-25 15:21:24.551 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=14, продукт=Our, количество=5
+2025-07-25 15:21:24.553 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":14,"product_name":"Our","quantity":5,"id":69}
+2025-07-25 15:21:24.553 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=69
+2025-07-25 15:21:24.554 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=14, продукт=Marriage, количество=1
+2025-07-25 15:21:24.556 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":14,"product_name":"Marriage","quantity":1,"id":70}
+2025-07-25 15:21:24.556 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=70
+2025-07-25 15:21:24.556 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=mwest7366, email=yjenkins@example.net, age=39
+2025-07-25 15:21:24.557 | INFO     | app.main:create_user:14 - Creating user mwest7366
+2025-07-25 15:21:24.559 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"mwest7366","email":"yjenkins@example.net","age":39,"id":15}
+2025-07-25 15:21:24.559 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=15
+2025-07-25 15:21:24.559 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=15, продукт=None, количество=3
+2025-07-25 15:21:24.561 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":15,"product_name":"None","quantity":3,"id":71}
+2025-07-25 15:21:24.561 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=71
+2025-07-25 15:21:24.562 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=15, продукт=Risk, количество=4
+2025-07-25 15:21:24.563 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":15,"product_name":"Risk","quantity":4,"id":72}
+2025-07-25 15:21:24.564 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=72
+2025-07-25 15:21:24.564 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=15, продукт=Body, количество=1
+2025-07-25 15:21:24.566 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":15,"product_name":"Body","quantity":1,"id":73}
+2025-07-25 15:21:24.566 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=73
+2025-07-25 15:21:24.566 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=15, продукт=Almost, количество=1
+2025-07-25 15:21:24.569 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":15,"product_name":"Almost","quantity":1,"id":74}
+2025-07-25 15:21:24.569 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=74
+2025-07-25 15:21:24.570 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=15, продукт=Foot, количество=5
+2025-07-25 15:21:24.572 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":15,"product_name":"Foot","quantity":5,"id":75}
+2025-07-25 15:21:24.572 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=75
+2025-07-25 15:21:24.572 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=laura571113, email=lindayoder@example.net, age=50
+2025-07-25 15:21:24.573 | INFO     | app.main:create_user:14 - Creating user laura571113
+2025-07-25 15:21:24.575 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"laura571113","email":"lindayoder@example.net","age":50,"id":16}
+2025-07-25 15:21:24.575 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=16
+2025-07-25 15:21:24.576 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=16, продукт=That, количество=2
+2025-07-25 15:21:24.578 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":16,"product_name":"That","quantity":2,"id":76}
+2025-07-25 15:21:24.578 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=76
+2025-07-25 15:21:24.578 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=16, продукт=None, количество=4
+2025-07-25 15:21:24.580 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":16,"product_name":"None","quantity":4,"id":77}
+2025-07-25 15:21:24.580 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=77
+2025-07-25 15:21:24.580 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=16, продукт=Apply, количество=1
+2025-07-25 15:21:24.582 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":16,"product_name":"Apply","quantity":1,"id":78}
+2025-07-25 15:21:24.583 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=78
+2025-07-25 15:21:24.583 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=16, продукт=Pressure, количество=5
+2025-07-25 15:21:24.585 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":16,"product_name":"Pressure","quantity":5,"id":79}
+2025-07-25 15:21:24.585 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=79
+2025-07-25 15:21:24.585 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=16, продукт=Military, количество=4
+2025-07-25 15:21:24.587 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":16,"product_name":"Military","quantity":4,"id":80}
+2025-07-25 15:21:24.587 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=80
+2025-07-25 15:21:24.587 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=urodriguez2146, email=cunninghammichele@example.com, age=28
+2025-07-25 15:21:24.588 | INFO     | app.main:create_user:14 - Creating user urodriguez2146
+2025-07-25 15:21:24.590 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"urodriguez2146","email":"cunninghammichele@example.com","age":28,"id":17}
+2025-07-25 15:21:24.590 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=17
+2025-07-25 15:21:24.590 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=17, продукт=Smile, количество=4
+2025-07-25 15:21:24.592 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":17,"product_name":"Smile","quantity":4,"id":81}
+2025-07-25 15:21:24.592 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=81
+2025-07-25 15:21:24.592 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=17, продукт=Surface, количество=2
+2025-07-25 15:21:24.595 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":17,"product_name":"Surface","quantity":2,"id":82}
+2025-07-25 15:21:24.595 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=82
+2025-07-25 15:21:24.595 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=17, продукт=Above, количество=5
+2025-07-25 15:21:24.597 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":17,"product_name":"Above","quantity":5,"id":83}
+2025-07-25 15:21:24.597 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=83
+2025-07-25 15:21:24.597 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=17, продукт=Coach, количество=3
+2025-07-25 15:21:24.599 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":17,"product_name":"Coach","quantity":3,"id":84}
+2025-07-25 15:21:24.599 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=84
+2025-07-25 15:21:24.599 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=17, продукт=Official, количество=2
+2025-07-25 15:21:24.601 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":17,"product_name":"Official","quantity":2,"id":85}
+2025-07-25 15:21:24.601 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=85
+2025-07-25 15:21:24.601 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=rosstrevor4354, email=waltersmonica@example.net, age=27
+2025-07-25 15:21:24.602 | INFO     | app.main:create_user:14 - Creating user rosstrevor4354
+2025-07-25 15:21:24.603 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"rosstrevor4354","email":"waltersmonica@example.net","age":27,"id":18}
+2025-07-25 15:21:24.604 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=18
+2025-07-25 15:21:24.604 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=18, продукт=His, количество=5
+2025-07-25 15:21:24.606 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":18,"product_name":"His","quantity":5,"id":86}
+2025-07-25 15:21:24.606 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=86
+2025-07-25 15:21:24.606 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=18, продукт=Democrat, количество=3
+2025-07-25 15:21:24.608 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":18,"product_name":"Democrat","quantity":3,"id":87}
+2025-07-25 15:21:24.608 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=87
+2025-07-25 15:21:24.608 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=18, продукт=Machine, количество=3
+2025-07-25 15:21:24.610 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":18,"product_name":"Machine","quantity":3,"id":88}
+2025-07-25 15:21:24.610 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=88
+2025-07-25 15:21:24.610 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=18, продукт=Magazine, количество=2
+2025-07-25 15:21:24.612 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":18,"product_name":"Magazine","quantity":2,"id":89}
+2025-07-25 15:21:24.612 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=89
+2025-07-25 15:21:24.612 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=18, продукт=Save, количество=4
+2025-07-25 15:21:24.614 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":18,"product_name":"Save","quantity":4,"id":90}
+2025-07-25 15:21:24.615 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=90
+2025-07-25 15:21:24.615 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=nelsondavid7380, email=mmartin@example.org, age=38
+2025-07-25 15:21:24.616 | INFO     | app.main:create_user:14 - Creating user nelsondavid7380
+2025-07-25 15:21:24.619 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"nelsondavid7380","email":"mmartin@example.org","age":38,"id":19}
+2025-07-25 15:21:24.619 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=19
+2025-07-25 15:21:24.619 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=19, продукт=Summer, количество=1
+2025-07-25 15:21:24.622 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":19,"product_name":"Summer","quantity":1,"id":91}
+2025-07-25 15:21:24.622 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=91
+2025-07-25 15:21:24.622 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=19, продукт=Management, количество=3
+2025-07-25 15:21:24.624 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":19,"product_name":"Management","quantity":3,"id":92}
+2025-07-25 15:21:24.624 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=92
+2025-07-25 15:21:24.625 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=19, продукт=Well, количество=1
+2025-07-25 15:21:24.627 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":19,"product_name":"Well","quantity":1,"id":93}
+2025-07-25 15:21:24.627 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=93
+2025-07-25 15:21:24.627 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=19, продукт=Material, количество=2
+2025-07-25 15:21:24.629 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":19,"product_name":"Material","quantity":2,"id":94}
+2025-07-25 15:21:24.629 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=94
+2025-07-25 15:21:24.629 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=19, продукт=Young, количество=1
+2025-07-25 15:21:24.631 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":19,"product_name":"Young","quantity":1,"id":95}
+2025-07-25 15:21:24.631 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=95
+2025-07-25 15:21:24.632 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=schneideremily8446, email=thomasjared@example.com, age=46
+2025-07-25 15:21:24.633 | INFO     | app.main:create_user:14 - Creating user schneideremily8446
+2025-07-25 15:21:24.634 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"schneideremily8446","email":"thomasjared@example.com","age":46,"id":20}
+2025-07-25 15:21:24.634 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=20
+2025-07-25 15:21:24.634 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=20, продукт=Republican, количество=1
+2025-07-25 15:21:24.636 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":20,"product_name":"Republican","quantity":1,"id":96}
+2025-07-25 15:21:24.636 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=96
+2025-07-25 15:21:24.636 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=20, продукт=Have, количество=1
+2025-07-25 15:21:24.640 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":20,"product_name":"Have","quantity":1,"id":97}
+2025-07-25 15:21:24.640 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=97
+2025-07-25 15:21:24.640 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=20, продукт=Commercial, количество=3
+2025-07-25 15:21:24.644 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":20,"product_name":"Commercial","quantity":3,"id":98}
+2025-07-25 15:21:24.644 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=98
+2025-07-25 15:21:24.644 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=20, продукт=They, количество=4
+2025-07-25 15:21:24.648 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":20,"product_name":"They","quantity":4,"id":99}
+2025-07-25 15:21:24.648 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=99
+2025-07-25 15:21:24.648 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=20, продукт=More, количество=4
+2025-07-25 15:21:24.654 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":20,"product_name":"More","quantity":4,"id":100}
+2025-07-25 15:21:24.654 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=100
+2025-07-25 15:27:42.439 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=rodriguezsamuel8853, email=thomas89@example.net, age=43
+2025-07-25 15:27:42.441 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=dukeamber7179, email=zroach@example.org, age=39
+2025-07-25 15:27:42.441 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=brownsamuel4657, email=david26@example.org, age=30
+2025-07-25 15:27:42.441 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=freemanlatoya3803, email=usmith@example.net, age=11
+2025-07-25 15:27:42.441 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=erikcrane7605, email=alyssa36@example.net, age=48
+2025-07-25 15:27:42.443 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=jacobrodriguez2108, email=matthew69@example.org, age=39
+2025-07-25 15:27:42.444 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=antonio572061, email=shawshannon@example.com, age=48
+2025-07-25 15:27:42.445 | INFO     | app.main:create_user:14 - Creating user dukeamber7179
+2025-07-25 15:27:42.446 | ERROR    | app.main:create_order:35 - User 9999 not found for order
+2025-07-25 15:27:42.445 | INFO     | app.main:create_user:14 - Creating user rodriguezsamuel8853
+2025-07-25 15:27:42.445 | INFO     | app.main:create_user:14 - Creating user brownsamuel4657
+2025-07-25 15:27:42.446 | INFO     | app.main:create_user:14 - Creating user freemanlatoya3803
+2025-07-25 15:27:42.446 | INFO     | app.main:create_user:14 - Creating user erikcrane7605
+2025-07-25 15:27:42.447 | INFO     | app.main:create_user:14 - Creating user jacobrodriguez2108
+2025-07-25 15:27:42.449 | INFO     | app.main:create_user:14 - Creating user antonio572061
+2025-07-25 15:27:42.453 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"brownsamuel4657","email":"david26@example.org","age":30,"id":1}
+2025-07-25 15:27:42.453 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"dukeamber7179","email":"zroach@example.org","age":39,"id":1}
+2025-07-25 15:27:42.453 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"erikcrane7605","email":"alyssa36@example.net","age":48,"id":1}
+2025-07-25 15:27:42.453 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:27:42.453 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"freemanlatoya3803","email":"usmith@example.net","age":11,"id":1}
+2025-07-25 15:27:42.453 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:27:42.454 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:27:42.453 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"rodriguezsamuel8853","email":"thomas89@example.net","age":43,"id":1}
+2025-07-25 15:27:42.455 | INFO     | app.main:create_user:14 - Creating user brownsamuel4657
+2025-07-25 15:27:42.456 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"antonio572061","email":"shawshannon@example.com","age":48,"id":1}
+2025-07-25 15:27:42.456 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:27:42.455 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"jacobrodriguez2108","email":"matthew69@example.org","age":39,"id":1}
+2025-07-25 15:27:42.453 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:27:42.454 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Southern, количество=4
+2025-07-25 15:27:42.453 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Expect, количество=5
+2025-07-25 15:27:42.454 | INFO     | tests.utils.steps:step_get_user:20 - Запрос на получение пользователя ID=1
+2025-07-25 15:27:42.453 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:27:42.455 | WARNING  | app.main:create_user:18 - Duplicate user brownsamuel4657
+2025-07-25 15:27:42.456 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Military, количество=4
+2025-07-25 15:27:42.457 | DEBUG    | tests.utils.steps:step_get_user:22 - Ответ API: 200 | {"username":"erikcrane7605","email":"alyssa36@example.net","age":48,"id":1}
+2025-07-25 15:27:42.455 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=1
+2025-07-25 15:27:42.458 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Expect","quantity":5,"id":1}
+2025-07-25 15:27:42.454 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Area, количество=3
+2025-07-25 15:27:42.458 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=1
+2025-07-25 15:27:42.462 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Military","quantity":4,"id":1}
+2025-07-25 15:27:42.459 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Southern","quantity":4,"id":1}
+2025-07-25 15:27:42.457 | SUCCESS  | tests.utils.steps:step_get_user:25 - Данные пользователя: {'username': 'erikcrane7605', 'email': 'alyssa36@example.net', 'age': 48, 'id': 1}
+2025-07-25 15:27:42.455 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Over, количество=4
+2025-07-25 15:27:42.459 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Area","quantity":3,"id":1}
+2025-07-25 15:27:42.462 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=1
+2025-07-25 15:27:42.458 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Politics, количество=1
+2025-07-25 15:27:42.459 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=1
+2025-07-25 15:27:42.462 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Model, количество=1
+2025-07-25 15:27:42.459 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=1
+2025-07-25 15:27:42.459 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=1
+2025-07-25 15:27:42.460 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Over","quantity":4,"id":1}
+2025-07-25 15:27:42.463 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Southern","quantity":4,"id":1}
+2025-07-25 15:27:42.465 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Model","quantity":1,"id":2}
+2025-07-25 15:27:42.459 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Use, количество=3
+2025-07-25 15:27:42.463 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Southern', 'quantity': 4, 'id': 1}
+2025-07-25 15:27:42.465 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=2
+2025-07-25 15:27:42.461 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=1
+2025-07-25 15:27:42.465 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Ten, количество=3
+2025-07-25 15:27:42.462 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Use","quantity":3,"id":2}
+2025-07-25 15:27:42.462 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Politics","quantity":1,"id":2}
+2025-07-25 15:27:42.468 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Ten","quantity":3,"id":3}
+2025-07-25 15:27:42.461 | INFO     | tests.utils.steps:step_get_user:20 - Запрос на получение пользователя ID=1
+2025-07-25 15:27:42.468 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=3
+2025-07-25 15:27:42.462 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=2
+2025-07-25 15:27:42.464 | DEBUG    | tests.utils.steps:step_get_user:22 - Ответ API: 200 | {"username":"jacobrodriguez2108","email":"matthew69@example.org","age":39,"id":1}
+2025-07-25 15:27:42.462 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=2
+2025-07-25 15:27:42.464 | SUCCESS  | tests.utils.steps:step_get_user:25 - Данные пользователя: {'username': 'jacobrodriguez2108', 'email': 'matthew69@example.org', 'age': 39, 'id': 1}
+2025-07-25 15:27:42.462 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Heart, количество=4
+2025-07-25 15:27:42.468 | INFO     | tests.utils.steps:step_get_user:20 - Запрос на получение пользователя ID=1
+2025-07-25 15:27:42.462 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Same, количество=3
+2025-07-25 15:27:42.464 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=1
+2025-07-25 15:27:42.470 | DEBUG    | tests.utils.steps:step_get_user:22 - Ответ API: 200 | {"username":"antonio572061","email":"shawshannon@example.com","age":48,"id":1}
+2025-07-25 15:27:42.466 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Heart","quantity":4,"id":3}
+2025-07-25 15:27:42.471 | SUCCESS  | tests.utils.steps:step_get_user:25 - Данные пользователя: {'username': 'antonio572061', 'email': 'shawshannon@example.com', 'age': 48, 'id': 1}
+2025-07-25 15:27:42.465 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Same","quantity":3,"id":3}
+2025-07-25 15:27:42.467 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Over","quantity":4,"id":1}
+2025-07-25 15:27:42.465 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=3
+2025-07-25 15:27:42.471 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=1
+2025-07-25 15:27:42.467 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Over', 'quantity': 4, 'id': 1}
+2025-07-25 15:27:42.466 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=3
+2025-07-25 15:27:42.465 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Study, количество=5
+2025-07-25 15:27:42.473 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Military","quantity":4,"id":1}
+2025-07-25 15:27:42.467 | INFO     | tests.utils.steps:step_check_db_user_and_orders:54 - Проверяем данные в БД для пользователя ID=1
+2025-07-25 15:27:42.467 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Imagine, количество=5
+2025-07-25 15:27:42.468 | SUCCESS  | tests.utils.steps:step_check_db_user_and_orders:64 - Проверка данных в БД пройдена: пользователь и 1 заказ(ов) совпадают с API
+2025-07-25 15:27:42.468 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Study","quantity":5,"id":4}
+2025-07-25 15:27:42.473 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Military', 'quantity': 4, 'id': 1}
+2025-07-25 15:27:42.468 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=4
+2025-07-25 15:27:42.471 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Imagine","quantity":5,"id":4}
+2025-07-25 15:27:42.474 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=2
+2025-07-25 15:27:42.476 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Model","quantity":1,"id":2}
+2025-07-25 15:27:42.468 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Expert, количество=1
+2025-07-25 15:27:42.471 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Expert","quantity":1,"id":5}
+2025-07-25 15:27:42.476 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Model', 'quantity': 1, 'id': 2}
+2025-07-25 15:27:42.471 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=4
+2025-07-25 15:27:42.471 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=5
+2025-07-25 15:27:42.476 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=3
+2025-07-25 15:27:42.471 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=1, продукт=Baby, количество=2
+2025-07-25 15:27:42.478 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Ten","quantity":3,"id":3}
+2025-07-25 15:27:42.474 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":1,"product_name":"Baby","quantity":2,"id":5}
+2025-07-25 15:27:42.478 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Ten', 'quantity': 3, 'id': 3}
+2025-07-25 15:27:42.471 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=riveratracy9761, email=deborahdavis@example.org, age=15
+2025-07-25 15:27:42.478 | INFO     | tests.utils.steps:step_check_db_user_and_orders:54 - Проверяем данные в БД для пользователя ID=1
+2025-07-25 15:27:42.474 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=5
+2025-07-25 15:27:42.473 | INFO     | app.main:create_user:14 - Creating user riveratracy9761
+2025-07-25 15:27:42.479 | SUCCESS  | tests.utils.steps:step_check_db_user_and_orders:64 - Проверка данных в БД пройдена: пользователь и 3 заказ(ов) совпадают с API
+2025-07-25 15:27:42.475 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"riveratracy9761","email":"deborahdavis@example.org","age":15,"id":2}
+2025-07-25 15:27:42.475 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=2
+2025-07-25 15:27:42.474 | INFO     | tests.utils.steps:step_get_user:20 - Запрос на получение пользователя ID=1
+2025-07-25 15:27:42.476 | DEBUG    | tests.utils.steps:step_get_user:22 - Ответ API: 200 | {"username":"dukeamber7179","email":"zroach@example.org","age":39,"id":1}
+2025-07-25 15:27:42.475 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=2, продукт=Any, количество=1
+2025-07-25 15:27:42.477 | SUCCESS  | tests.utils.steps:step_get_user:25 - Данные пользователя: {'username': 'dukeamber7179', 'email': 'zroach@example.org', 'age': 39, 'id': 1}
+2025-07-25 15:27:42.477 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":2,"product_name":"Any","quantity":1,"id":6}
+2025-07-25 15:27:42.477 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=6
+2025-07-25 15:27:42.477 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=1
+2025-07-25 15:27:42.478 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=2, продукт=Machine, количество=2
+2025-07-25 15:27:42.479 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Expect","quantity":5,"id":1}
+2025-07-25 15:27:42.480 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":2,"product_name":"Machine","quantity":2,"id":7}
+2025-07-25 15:27:42.479 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Expect', 'quantity': 5, 'id': 1}
+2025-07-25 15:27:42.480 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=7
+2025-07-25 15:27:42.479 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=2
+2025-07-25 15:27:42.482 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Politics","quantity":1,"id":2}
+2025-07-25 15:27:42.482 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Politics', 'quantity': 1, 'id': 2}
+2025-07-25 15:27:42.480 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=2, продукт=Him, количество=5
+2025-07-25 15:27:42.483 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":2,"product_name":"Him","quantity":5,"id":8}
+2025-07-25 15:27:42.483 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=3
+2025-07-25 15:27:42.483 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=8
+2025-07-25 15:27:42.485 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Heart","quantity":4,"id":3}
+2025-07-25 15:27:42.485 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Heart', 'quantity': 4, 'id': 3}
+2025-07-25 15:27:42.484 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=2, продукт=Wait, количество=2
+2025-07-25 15:27:42.485 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=4
+2025-07-25 15:27:42.486 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":2,"product_name":"Wait","quantity":2,"id":9}
+2025-07-25 15:27:42.487 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Imagine","quantity":5,"id":4}
+2025-07-25 15:27:42.486 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=9
+2025-07-25 15:27:42.487 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Imagine', 'quantity': 5, 'id': 4}
+2025-07-25 15:27:42.486 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=2, продукт=Various, количество=4
+2025-07-25 15:27:42.487 | INFO     | tests.utils.steps:step_get_order:42 - Запрос на получение заказа ID=5
+2025-07-25 15:27:42.489 | DEBUG    | tests.utils.steps:step_get_order:44 - Ответ API: 200 | {"user_id":1,"product_name":"Baby","quantity":2,"id":5}
+2025-07-25 15:27:42.488 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":2,"product_name":"Various","quantity":4,"id":10}
+2025-07-25 15:27:42.489 | SUCCESS  | tests.utils.steps:step_get_order:47 - Данные заказа: {'user_id': 1, 'product_name': 'Baby', 'quantity': 2, 'id': 5}
+2025-07-25 15:27:42.489 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=10
+2025-07-25 15:27:42.489 | INFO     | tests.utils.steps:step_check_db_user_and_orders:54 - Проверяем данные в БД для пользователя ID=1
+2025-07-25 15:27:42.489 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=nicholascole6141, email=alexandra33@example.net, age=59
+2025-07-25 15:27:42.490 | SUCCESS  | tests.utils.steps:step_check_db_user_and_orders:64 - Проверка данных в БД пройдена: пользователь и 5 заказ(ов) совпадают с API
+2025-07-25 15:27:42.490 | INFO     | app.main:create_user:14 - Creating user nicholascole6141
+2025-07-25 15:27:42.492 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"nicholascole6141","email":"alexandra33@example.net","age":59,"id":3}
+2025-07-25 15:27:42.492 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=3
+2025-07-25 15:27:42.492 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=3, продукт=Money, количество=3
+2025-07-25 15:27:42.494 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":3,"product_name":"Money","quantity":3,"id":11}
+2025-07-25 15:27:42.494 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=11
+2025-07-25 15:27:42.494 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=3, продукт=Environment, количество=4
+2025-07-25 15:27:42.496 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":3,"product_name":"Environment","quantity":4,"id":12}
+2025-07-25 15:27:42.496 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=12
+2025-07-25 15:27:42.496 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=3, продукт=Deal, количество=1
+2025-07-25 15:27:42.498 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":3,"product_name":"Deal","quantity":1,"id":13}
+2025-07-25 15:27:42.498 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=13
+2025-07-25 15:27:42.498 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=3, продукт=Model, количество=5
+2025-07-25 15:27:42.500 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":3,"product_name":"Model","quantity":5,"id":14}
+2025-07-25 15:27:42.500 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=14
+2025-07-25 15:27:42.500 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=3, продукт=We, количество=1
+2025-07-25 15:27:42.502 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":3,"product_name":"We","quantity":1,"id":15}
+2025-07-25 15:27:42.502 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=15
+2025-07-25 15:27:42.503 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=baldwinluis8523, email=egillespie@example.com, age=25
+2025-07-25 15:27:42.503 | INFO     | app.main:create_user:14 - Creating user baldwinluis8523
+2025-07-25 15:27:42.505 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"baldwinluis8523","email":"egillespie@example.com","age":25,"id":4}
+2025-07-25 15:27:42.505 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=4
+2025-07-25 15:27:42.505 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=4, продукт=And, количество=1
+2025-07-25 15:27:42.507 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":4,"product_name":"And","quantity":1,"id":16}
+2025-07-25 15:27:42.507 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=16
+2025-07-25 15:27:42.507 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=4, продукт=Though, количество=1
+2025-07-25 15:27:42.509 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":4,"product_name":"Though","quantity":1,"id":17}
+2025-07-25 15:27:42.509 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=17
+2025-07-25 15:27:42.509 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=4, продукт=Piece, количество=3
+2025-07-25 15:27:42.510 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":4,"product_name":"Piece","quantity":3,"id":18}
+2025-07-25 15:27:42.510 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=18
+2025-07-25 15:27:42.511 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=4, продукт=Run, количество=1
+2025-07-25 15:27:42.512 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":4,"product_name":"Run","quantity":1,"id":19}
+2025-07-25 15:27:42.512 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=19
+2025-07-25 15:27:42.512 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=4, продукт=Material, количество=1
+2025-07-25 15:27:42.514 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":4,"product_name":"Material","quantity":1,"id":20}
+2025-07-25 15:27:42.514 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=20
+2025-07-25 15:27:42.514 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=guzmantimothy6804, email=zmorrison@example.com, age=25
+2025-07-25 15:27:42.515 | INFO     | app.main:create_user:14 - Creating user guzmantimothy6804
+2025-07-25 15:27:42.516 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"guzmantimothy6804","email":"zmorrison@example.com","age":25,"id":5}
+2025-07-25 15:27:42.516 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=5
+2025-07-25 15:27:42.516 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=5, продукт=Plant, количество=5
+2025-07-25 15:27:42.518 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":5,"product_name":"Plant","quantity":5,"id":21}
+2025-07-25 15:27:42.518 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=21
+2025-07-25 15:27:42.518 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=5, продукт=Book, количество=5
+2025-07-25 15:27:42.520 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":5,"product_name":"Book","quantity":5,"id":22}
+2025-07-25 15:27:42.520 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=22
+2025-07-25 15:27:42.520 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=5, продукт=Little, количество=4
+2025-07-25 15:27:42.522 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":5,"product_name":"Little","quantity":4,"id":23}
+2025-07-25 15:27:42.522 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=23
+2025-07-25 15:27:42.522 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=5, продукт=Thing, количество=4
+2025-07-25 15:27:42.524 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":5,"product_name":"Thing","quantity":4,"id":24}
+2025-07-25 15:27:42.524 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=24
+2025-07-25 15:27:42.524 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=5, продукт=Response, количество=1
+2025-07-25 15:27:42.526 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":5,"product_name":"Response","quantity":1,"id":25}
+2025-07-25 15:27:42.526 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=25
+2025-07-25 15:27:42.526 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=hyoung8458, email=stricklandtimothy@example.org, age=47
+2025-07-25 15:27:42.527 | INFO     | app.main:create_user:14 - Creating user hyoung8458
+2025-07-25 15:27:42.528 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"hyoung8458","email":"stricklandtimothy@example.org","age":47,"id":6}
+2025-07-25 15:27:42.528 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=6
+2025-07-25 15:27:42.528 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=6, продукт=Kind, количество=4
+2025-07-25 15:27:42.530 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":6,"product_name":"Kind","quantity":4,"id":26}
+2025-07-25 15:27:42.530 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=26
+2025-07-25 15:27:42.530 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=6, продукт=This, количество=2
+2025-07-25 15:27:42.532 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":6,"product_name":"This","quantity":2,"id":27}
+2025-07-25 15:27:42.532 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=27
+2025-07-25 15:27:42.532 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=6, продукт=Yeah, количество=3
+2025-07-25 15:27:42.533 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":6,"product_name":"Yeah","quantity":3,"id":28}
+2025-07-25 15:27:42.533 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=28
+2025-07-25 15:27:42.534 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=6, продукт=Keep, количество=1
+2025-07-25 15:27:42.535 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":6,"product_name":"Keep","quantity":1,"id":29}
+2025-07-25 15:27:42.535 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=29
+2025-07-25 15:27:42.535 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=6, продукт=Newspaper, количество=1
+2025-07-25 15:27:42.537 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":6,"product_name":"Newspaper","quantity":1,"id":30}
+2025-07-25 15:27:42.537 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=30
+2025-07-25 15:27:42.537 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=josephbrown1410, email=eric24@example.net, age=15
+2025-07-25 15:27:42.538 | INFO     | app.main:create_user:14 - Creating user josephbrown1410
+2025-07-25 15:27:42.539 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"josephbrown1410","email":"eric24@example.net","age":15,"id":7}
+2025-07-25 15:27:42.539 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=7
+2025-07-25 15:27:42.539 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=7, продукт=Thousand, количество=2
+2025-07-25 15:27:42.541 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":7,"product_name":"Thousand","quantity":2,"id":31}
+2025-07-25 15:27:42.541 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=31
+2025-07-25 15:27:42.541 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=7, продукт=Table, количество=2
+2025-07-25 15:27:42.542 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":7,"product_name":"Table","quantity":2,"id":32}
+2025-07-25 15:27:42.543 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=32
+2025-07-25 15:27:42.543 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=7, продукт=Plan, количество=2
+2025-07-25 15:27:42.544 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":7,"product_name":"Plan","quantity":2,"id":33}
+2025-07-25 15:27:42.544 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=33
+2025-07-25 15:27:42.544 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=7, продукт=Listen, количество=1
+2025-07-25 15:27:42.546 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":7,"product_name":"Listen","quantity":1,"id":34}
+2025-07-25 15:27:42.546 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=34
+2025-07-25 15:27:42.546 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=7, продукт=Executive, количество=4
+2025-07-25 15:27:42.548 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":7,"product_name":"Executive","quantity":4,"id":35}
+2025-07-25 15:27:42.548 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=35
+2025-07-25 15:27:42.548 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=christopherturner6953, email=ericamendoza@example.net, age=25
+2025-07-25 15:27:42.549 | INFO     | app.main:create_user:14 - Creating user christopherturner6953
+2025-07-25 15:27:42.550 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"christopherturner6953","email":"ericamendoza@example.net","age":25,"id":8}
+2025-07-25 15:27:42.550 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=8
+2025-07-25 15:27:42.550 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=8, продукт=Participant, количество=2
+2025-07-25 15:27:42.552 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":8,"product_name":"Participant","quantity":2,"id":36}
+2025-07-25 15:27:42.552 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=36
+2025-07-25 15:27:42.552 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=8, продукт=There, количество=3
+2025-07-25 15:27:42.553 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":8,"product_name":"There","quantity":3,"id":37}
+2025-07-25 15:27:42.553 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=37
+2025-07-25 15:27:42.554 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=8, продукт=Hot, количество=1
+2025-07-25 15:27:42.555 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":8,"product_name":"Hot","quantity":1,"id":38}
+2025-07-25 15:27:42.555 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=38
+2025-07-25 15:27:42.555 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=8, продукт=Develop, количество=4
+2025-07-25 15:27:42.557 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":8,"product_name":"Develop","quantity":4,"id":39}
+2025-07-25 15:27:42.557 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=39
+2025-07-25 15:27:42.557 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=8, продукт=Night, количество=1
+2025-07-25 15:27:42.558 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":8,"product_name":"Night","quantity":1,"id":40}
+2025-07-25 15:27:42.559 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=40
+2025-07-25 15:27:42.559 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=castanedagail5946, email=huffmanlisa@example.com, age=46
+2025-07-25 15:27:42.560 | INFO     | app.main:create_user:14 - Creating user castanedagail5946
+2025-07-25 15:27:42.561 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"castanedagail5946","email":"huffmanlisa@example.com","age":46,"id":9}
+2025-07-25 15:27:42.561 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=9
+2025-07-25 15:27:42.561 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=9, продукт=Talk, количество=2
+2025-07-25 15:27:42.562 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":9,"product_name":"Talk","quantity":2,"id":41}
+2025-07-25 15:27:42.563 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=41
+2025-07-25 15:27:42.563 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=9, продукт=Start, количество=2
+2025-07-25 15:27:42.564 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":9,"product_name":"Start","quantity":2,"id":42}
+2025-07-25 15:27:42.564 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=42
+2025-07-25 15:27:42.564 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=9, продукт=During, количество=4
+2025-07-25 15:27:42.566 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":9,"product_name":"During","quantity":4,"id":43}
+2025-07-25 15:27:42.566 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=43
+2025-07-25 15:27:42.566 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=9, продукт=Series, количество=5
+2025-07-25 15:27:42.567 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":9,"product_name":"Series","quantity":5,"id":44}
+2025-07-25 15:27:42.568 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=44
+2025-07-25 15:27:42.568 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=9, продукт=Democrat, количество=5
+2025-07-25 15:27:42.569 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":9,"product_name":"Democrat","quantity":5,"id":45}
+2025-07-25 15:27:42.569 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=45
+2025-07-25 15:27:42.570 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=lancewilson4392, email=james38@example.net, age=29
+2025-07-25 15:27:42.570 | INFO     | app.main:create_user:14 - Creating user lancewilson4392
+2025-07-25 15:27:42.572 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"lancewilson4392","email":"james38@example.net","age":29,"id":10}
+2025-07-25 15:27:42.572 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=10
+2025-07-25 15:27:42.572 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=10, продукт=Rest, количество=4
+2025-07-25 15:27:42.573 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":10,"product_name":"Rest","quantity":4,"id":46}
+2025-07-25 15:27:42.574 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=46
+2025-07-25 15:27:42.574 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=10, продукт=Star, количество=1
+2025-07-25 15:27:42.575 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":10,"product_name":"Star","quantity":1,"id":47}
+2025-07-25 15:27:42.575 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=47
+2025-07-25 15:27:42.575 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=10, продукт=Far, количество=3
+2025-07-25 15:27:42.577 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":10,"product_name":"Far","quantity":3,"id":48}
+2025-07-25 15:27:42.577 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=48
+2025-07-25 15:27:42.577 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=10, продукт=World, количество=2
+2025-07-25 15:27:42.579 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":10,"product_name":"World","quantity":2,"id":49}
+2025-07-25 15:27:42.579 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=49
+2025-07-25 15:27:42.579 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=10, продукт=Tax, количество=5
+2025-07-25 15:27:42.581 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":10,"product_name":"Tax","quantity":5,"id":50}
+2025-07-25 15:27:42.581 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=50
+2025-07-25 15:27:42.581 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=bryan002868, email=nfox@example.org, age=54
+2025-07-25 15:27:42.582 | INFO     | app.main:create_user:14 - Creating user bryan002868
+2025-07-25 15:27:42.583 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"bryan002868","email":"nfox@example.org","age":54,"id":11}
+2025-07-25 15:27:42.583 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=11
+2025-07-25 15:27:42.583 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=11, продукт=True, количество=3
+2025-07-25 15:27:42.585 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":11,"product_name":"True","quantity":3,"id":51}
+2025-07-25 15:27:42.585 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=51
+2025-07-25 15:27:42.585 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=11, продукт=Score, количество=3
+2025-07-25 15:27:42.586 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":11,"product_name":"Score","quantity":3,"id":52}
+2025-07-25 15:27:42.586 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=52
+2025-07-25 15:27:42.587 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=11, продукт=Edge, количество=1
+2025-07-25 15:27:42.588 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":11,"product_name":"Edge","quantity":1,"id":53}
+2025-07-25 15:27:42.588 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=53
+2025-07-25 15:27:42.588 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=11, продукт=Development, количество=3
+2025-07-25 15:27:42.590 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":11,"product_name":"Development","quantity":3,"id":54}
+2025-07-25 15:27:42.590 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=54
+2025-07-25 15:27:42.590 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=11, продукт=Act, количество=2
+2025-07-25 15:27:42.592 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":11,"product_name":"Act","quantity":2,"id":55}
+2025-07-25 15:27:42.592 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=55
+2025-07-25 15:27:42.592 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=riverahailey8288, email=cerickson@example.org, age=25
+2025-07-25 15:27:42.593 | INFO     | app.main:create_user:14 - Creating user riverahailey8288
+2025-07-25 15:27:42.594 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"riverahailey8288","email":"cerickson@example.org","age":25,"id":12}
+2025-07-25 15:27:42.594 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=12
+2025-07-25 15:27:42.594 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=12, продукт=General, количество=1
+2025-07-25 15:27:42.596 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":12,"product_name":"General","quantity":1,"id":56}
+2025-07-25 15:27:42.596 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=56
+2025-07-25 15:27:42.596 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=12, продукт=School, количество=2
+2025-07-25 15:27:42.598 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":12,"product_name":"School","quantity":2,"id":57}
+2025-07-25 15:27:42.598 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=57
+2025-07-25 15:27:42.598 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=12, продукт=Bed, количество=3
+2025-07-25 15:27:42.599 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":12,"product_name":"Bed","quantity":3,"id":58}
+2025-07-25 15:27:42.599 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=58
+2025-07-25 15:27:42.599 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=12, продукт=Air, количество=2
+2025-07-25 15:27:42.601 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":12,"product_name":"Air","quantity":2,"id":59}
+2025-07-25 15:27:42.601 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=59
+2025-07-25 15:27:42.601 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=12, продукт=Else, количество=1
+2025-07-25 15:27:42.603 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":12,"product_name":"Else","quantity":1,"id":60}
+2025-07-25 15:27:42.603 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=60
+2025-07-25 15:27:42.603 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=robinclayton9911, email=hamiltonshannon@example.com, age=43
+2025-07-25 15:27:42.604 | INFO     | app.main:create_user:14 - Creating user robinclayton9911
+2025-07-25 15:27:42.605 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"robinclayton9911","email":"hamiltonshannon@example.com","age":43,"id":13}
+2025-07-25 15:27:42.605 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=13
+2025-07-25 15:27:42.605 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=13, продукт=Season, количество=3
+2025-07-25 15:27:42.607 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":13,"product_name":"Season","quantity":3,"id":61}
+2025-07-25 15:27:42.607 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=61
+2025-07-25 15:27:42.607 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=13, продукт=Have, количество=5
+2025-07-25 15:27:42.608 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":13,"product_name":"Have","quantity":5,"id":62}
+2025-07-25 15:27:42.608 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=62
+2025-07-25 15:27:42.608 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=13, продукт=Speech, количество=4
+2025-07-25 15:27:42.610 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":13,"product_name":"Speech","quantity":4,"id":63}
+2025-07-25 15:27:42.610 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=63
+2025-07-25 15:27:42.610 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=13, продукт=Trial, количество=5
+2025-07-25 15:27:42.612 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":13,"product_name":"Trial","quantity":5,"id":64}
+2025-07-25 15:27:42.612 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=64
+2025-07-25 15:27:42.612 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=13, продукт=Lose, количество=1
+2025-07-25 15:27:42.614 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":13,"product_name":"Lose","quantity":1,"id":65}
+2025-07-25 15:27:42.614 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=65
+2025-07-25 15:27:42.614 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=morganaustin8822, email=fletcherbecky@example.net, age=20
+2025-07-25 15:27:42.615 | INFO     | app.main:create_user:14 - Creating user morganaustin8822
+2025-07-25 15:27:42.616 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"morganaustin8822","email":"fletcherbecky@example.net","age":20,"id":14}
+2025-07-25 15:27:42.616 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=14
+2025-07-25 15:27:42.616 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=14, продукт=Mission, количество=5
+2025-07-25 15:27:42.618 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":14,"product_name":"Mission","quantity":5,"id":66}
+2025-07-25 15:27:42.618 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=66
+2025-07-25 15:27:42.618 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=14, продукт=Always, количество=1
+2025-07-25 15:27:42.619 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":14,"product_name":"Always","quantity":1,"id":67}
+2025-07-25 15:27:42.619 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=67
+2025-07-25 15:27:42.620 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=14, продукт=Seat, количество=5
+2025-07-25 15:27:42.621 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":14,"product_name":"Seat","quantity":5,"id":68}
+2025-07-25 15:27:42.621 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=68
+2025-07-25 15:27:42.621 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=14, продукт=Head, количество=4
+2025-07-25 15:27:42.623 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":14,"product_name":"Head","quantity":4,"id":69}
+2025-07-25 15:27:42.623 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=69
+2025-07-25 15:27:42.623 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=14, продукт=Consider, количество=2
+2025-07-25 15:27:42.625 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":14,"product_name":"Consider","quantity":2,"id":70}
+2025-07-25 15:27:42.625 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=70
+2025-07-25 15:27:42.625 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=patriciaadams6046, email=lhernandez@example.org, age=18
+2025-07-25 15:27:42.626 | INFO     | app.main:create_user:14 - Creating user patriciaadams6046
+2025-07-25 15:27:42.627 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"patriciaadams6046","email":"lhernandez@example.org","age":18,"id":15}
+2025-07-25 15:27:42.627 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=15
+2025-07-25 15:27:42.627 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=15, продукт=Season, количество=5
+2025-07-25 15:27:42.629 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":15,"product_name":"Season","quantity":5,"id":71}
+2025-07-25 15:27:42.629 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=71
+2025-07-25 15:27:42.629 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=15, продукт=Under, количество=1
+2025-07-25 15:27:42.631 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":15,"product_name":"Under","quantity":1,"id":72}
+2025-07-25 15:27:42.631 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=72
+2025-07-25 15:27:42.631 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=15, продукт=Truth, количество=5
+2025-07-25 15:27:42.632 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":15,"product_name":"Truth","quantity":5,"id":73}
+2025-07-25 15:27:42.632 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=73
+2025-07-25 15:27:42.632 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=15, продукт=Image, количество=3
+2025-07-25 15:27:42.634 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":15,"product_name":"Image","quantity":3,"id":74}
+2025-07-25 15:27:42.634 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=74
+2025-07-25 15:27:42.634 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=15, продукт=Forget, количество=5
+2025-07-25 15:27:42.636 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":15,"product_name":"Forget","quantity":5,"id":75}
+2025-07-25 15:27:42.636 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=75
+2025-07-25 15:27:42.636 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=chandlerheidi6533, email=cainwesley@example.com, age=20
+2025-07-25 15:27:42.637 | INFO     | app.main:create_user:14 - Creating user chandlerheidi6533
+2025-07-25 15:27:42.638 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"chandlerheidi6533","email":"cainwesley@example.com","age":20,"id":16}
+2025-07-25 15:27:42.638 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=16
+2025-07-25 15:27:42.639 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=16, продукт=Break, количество=2
+2025-07-25 15:27:42.640 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":16,"product_name":"Break","quantity":2,"id":76}
+2025-07-25 15:27:42.640 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=76
+2025-07-25 15:27:42.641 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=16, продукт=Its, количество=2
+2025-07-25 15:27:42.642 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":16,"product_name":"Its","quantity":2,"id":77}
+2025-07-25 15:27:42.642 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=77
+2025-07-25 15:27:42.642 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=16, продукт=Matter, количество=4
+2025-07-25 15:27:42.644 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":16,"product_name":"Matter","quantity":4,"id":78}
+2025-07-25 15:27:42.644 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=78
+2025-07-25 15:27:42.644 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=16, продукт=Play, количество=4
+2025-07-25 15:27:42.646 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":16,"product_name":"Play","quantity":4,"id":79}
+2025-07-25 15:27:42.646 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=79
+2025-07-25 15:27:42.646 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=16, продукт=Left, количество=4
+2025-07-25 15:27:42.647 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":16,"product_name":"Left","quantity":4,"id":80}
+2025-07-25 15:27:42.647 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=80
+2025-07-25 15:27:42.648 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=redwards9396, email=warnerjennifer@example.com, age=25
+2025-07-25 15:27:42.649 | INFO     | app.main:create_user:14 - Creating user redwards9396
+2025-07-25 15:27:42.650 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"redwards9396","email":"warnerjennifer@example.com","age":25,"id":17}
+2025-07-25 15:27:42.650 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=17
+2025-07-25 15:27:42.650 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=17, продукт=Become, количество=3
+2025-07-25 15:27:42.652 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":17,"product_name":"Become","quantity":3,"id":81}
+2025-07-25 15:27:42.652 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=81
+2025-07-25 15:27:42.652 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=17, продукт=Practice, количество=1
+2025-07-25 15:27:42.654 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":17,"product_name":"Practice","quantity":1,"id":82}
+2025-07-25 15:27:42.654 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=82
+2025-07-25 15:27:42.654 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=17, продукт=Society, количество=1
+2025-07-25 15:27:42.657 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":17,"product_name":"Society","quantity":1,"id":83}
+2025-07-25 15:27:42.657 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=83
+2025-07-25 15:27:42.657 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=17, продукт=Son, количество=4
+2025-07-25 15:27:42.659 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":17,"product_name":"Son","quantity":4,"id":84}
+2025-07-25 15:27:42.659 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=84
+2025-07-25 15:27:42.659 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=17, продукт=Knowledge, количество=3
+2025-07-25 15:27:42.661 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":17,"product_name":"Knowledge","quantity":3,"id":85}
+2025-07-25 15:27:42.661 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=85
+2025-07-25 15:27:42.661 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=dawn226487, email=dunlapmichael@example.org, age=31
+2025-07-25 15:27:42.662 | INFO     | app.main:create_user:14 - Creating user dawn226487
+2025-07-25 15:27:42.663 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"dawn226487","email":"dunlapmichael@example.org","age":31,"id":18}
+2025-07-25 15:27:42.663 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=18
+2025-07-25 15:27:42.663 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=18, продукт=Help, количество=1
+2025-07-25 15:27:42.665 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":18,"product_name":"Help","quantity":1,"id":86}
+2025-07-25 15:27:42.665 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=86
+2025-07-25 15:27:42.665 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=18, продукт=Pretty, количество=3
+2025-07-25 15:27:42.667 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":18,"product_name":"Pretty","quantity":3,"id":87}
+2025-07-25 15:27:42.667 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=87
+2025-07-25 15:27:42.667 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=18, продукт=Some, количество=5
+2025-07-25 15:27:42.668 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":18,"product_name":"Some","quantity":5,"id":88}
+2025-07-25 15:27:42.669 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=88
+2025-07-25 15:27:42.669 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=18, продукт=Cover, количество=3
+2025-07-25 15:27:42.670 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":18,"product_name":"Cover","quantity":3,"id":89}
+2025-07-25 15:27:42.670 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=89
+2025-07-25 15:27:42.671 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=18, продукт=Respond, количество=4
+2025-07-25 15:27:42.672 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":18,"product_name":"Respond","quantity":4,"id":90}
+2025-07-25 15:27:42.672 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=90
+2025-07-25 15:27:42.673 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=bonnie657132, email=harrisjeremy@example.org, age=16
+2025-07-25 15:27:42.673 | INFO     | app.main:create_user:14 - Creating user bonnie657132
+2025-07-25 15:27:42.674 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"bonnie657132","email":"harrisjeremy@example.org","age":16,"id":19}
+2025-07-25 15:27:42.675 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=19
+2025-07-25 15:27:42.675 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=19, продукт=Along, количество=1
+2025-07-25 15:27:42.677 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":19,"product_name":"Along","quantity":1,"id":91}
+2025-07-25 15:27:42.677 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=91
+2025-07-25 15:27:42.677 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=19, продукт=Better, количество=3
+2025-07-25 15:27:42.678 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":19,"product_name":"Better","quantity":3,"id":92}
+2025-07-25 15:27:42.678 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=92
+2025-07-25 15:27:42.679 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=19, продукт=Little, количество=3
+2025-07-25 15:27:42.680 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":19,"product_name":"Little","quantity":3,"id":93}
+2025-07-25 15:27:42.680 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=93
+2025-07-25 15:27:42.680 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=19, продукт=Wrong, количество=1
+2025-07-25 15:27:42.682 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":19,"product_name":"Wrong","quantity":1,"id":94}
+2025-07-25 15:27:42.682 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=94
+2025-07-25 15:27:42.682 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=19, продукт=Discover, количество=1
+2025-07-25 15:27:42.684 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":19,"product_name":"Discover","quantity":1,"id":95}
+2025-07-25 15:27:42.684 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=95
+2025-07-25 15:27:42.684 | INFO     | tests.utils.steps:step_create_user:9 - Создаем пользователя username=tina273932, email=whitneycaldwell@example.net, age=25
+2025-07-25 15:27:42.685 | INFO     | app.main:create_user:14 - Creating user tina273932
+2025-07-25 15:27:42.686 | DEBUG    | tests.utils.steps:step_create_user:11 - Ответ API: 200 | {"username":"tina273932","email":"whitneycaldwell@example.net","age":25,"id":20}
+2025-07-25 15:27:42.686 | SUCCESS  | tests.utils.steps:step_create_user:14 - Пользователь создан с ID=20
+2025-07-25 15:27:42.686 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=20, продукт=Determine, количество=2
+2025-07-25 15:27:42.687 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":20,"product_name":"Determine","quantity":2,"id":96}
+2025-07-25 15:27:42.688 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=96
+2025-07-25 15:27:42.688 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=20, продукт=Speech, количество=3
+2025-07-25 15:27:42.689 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":20,"product_name":"Speech","quantity":3,"id":97}
+2025-07-25 15:27:42.689 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=97
+2025-07-25 15:27:42.689 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=20, продукт=Story, количество=1
+2025-07-25 15:27:42.691 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":20,"product_name":"Story","quantity":1,"id":98}
+2025-07-25 15:27:42.691 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=98
+2025-07-25 15:27:42.691 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=20, продукт=Really, количество=5
+2025-07-25 15:27:42.693 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":20,"product_name":"Really","quantity":5,"id":99}
+2025-07-25 15:27:42.693 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=99
+2025-07-25 15:27:42.693 | INFO     | tests.utils.steps:step_create_order:31 - Создаем заказ: user_id=20, продукт=Feel, количество=5
+2025-07-25 15:27:42.694 | DEBUG    | tests.utils.steps:step_create_order:33 - Ответ API: 200 | {"user_id":20,"product_name":"Feel","quantity":5,"id":100}
+2025-07-25 15:27:42.694 | SUCCESS  | tests.utils.steps:step_create_order:36 - Заказ создан с ID=100
